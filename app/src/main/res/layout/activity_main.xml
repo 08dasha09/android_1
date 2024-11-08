@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- ImageView для отображения селфи -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="Селфі"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+
+    <!-- Контейнер для кнопок с горизонтальной ориентацией -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <!-- Кнопка для съёмки селфи, расположена слева -->
+        <Button
+            android:id="@+id/captureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Зробити селфі"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_gravity="start"/>
+
+        <!-- Кнопка для отправки селфи, расположена справа -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Відіслати селфі"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>
